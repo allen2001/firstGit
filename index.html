@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>function</title>
+</head>
+<body>
+	<h1>函数分类</h1>
+</body>
+</html>
+<script type="text/javascript">
+	//a();	会报错
+
+	b();	//30
+
+	var a = function () {	//变量式函数
+		console.log(10);
+	}
+
+	a();	//10
+
+	var a = function () {
+		console.log(20);
+	}
+
+	a();	//20
+
+	function b() {		//声明式函数
+		console.log(20);
+	}
+	
+	b();	//30
+
+	function b() {
+		console.log(30)
+	}
+
+	b();	//30
+
+</script>
+<script type="text/javascript">
+	b();	//50
+
+	function b() {
+		console.log(50);
+	}
+</script>
